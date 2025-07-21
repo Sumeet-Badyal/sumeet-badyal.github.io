@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumeet Badyal</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: #0a0a0a;
+            color: #ffffff;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            text-align: center;
+            animation: fadeIn 1s ease-in;
+        }
+
+        .main-text {
+            font-size: 1.1rem;
+            font-weight: 300;
+            letter-spacing: 0.3px;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .contact {
+            font-size: 1rem;
+            opacity: 0.7;
+            transition: opacity 0.3s ease;
+        }
+
+        .contact:hover {
+            opacity: 1;
+        }
+
+        .email-link {
+            color: #ffffff;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            transition: border-bottom-color 0.3s ease;
+        }
+
+        .email-link:hover {
+            border-bottom-color: rgba(255, 255, 255, 0.8);
+        }
+
+        .location-year {
+            font-size: 0.85rem;
+            opacity: 0.5;
+            margin-top: 2rem;
+            font-weight: 300;
+            letter-spacing: 1px;
+            transition: opacity 0.3s ease;
+        }
+
+        .location-year:hover {
+            opacity: 0.7;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .main-text {
+                font-size: 1rem;
+            }
+            
+            .contact {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="main-text">
+            I run a long/short, medium-frequency trading operation focused on LEAPS and equity options using a range of quantitative strategies. My current work centers on integrating deep reinforcement learning to construct a L/S portfolio.
+        </p>
+        <p class="contact">
+            Contact me at <a href="mailto:sumeet.s.badyal@gmail.com" class="email-link">sumeet.s.badyal@gmail.com</a>
+        </p>
+        <p class="location-year">
+            New York, 2025
+        </p>
+    </div>
+</body>
+</html>
